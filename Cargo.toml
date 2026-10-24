@@ -1,0 +1,37 @@
+[workspace]
+members = [".", "tsf"]
+resolver = "2"
+
+[package]
+name = "heyu-ime"
+version = "1.0.0"
+edition = "2021"
+authors = ["Personal Clean-Room Edition"]
+description = "HEYU (鹤羽输入法) - offline Rust input method"
+
+[lib]
+name = "heyu_core"
+path = "src/lib.rs"
+# rlib only: the TSF DLL lives in the `tsf/` crate (heyu_tsf.dll).
+crate-type = ["rlib"]
+
+[[bin]]
+name = "heyu-ime"
+path = "src/main.rs"
+
+[[bin]]
+name = "heyu-voice"
+path = "voice/src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "unwind"
+strip = true
+
+[dependencies]
+# ZERO third-party dependencies by Clean-Room Security Design!
+# 100% pure Rust standard library + direct Win32 OS FFI (user32, gdi32, shell32, kernel32, advapi32).
+# Zero network libraries (no ws2_32, no winhttp, no wininet, no reqwest, no tokio).
+# (The separate `tsf/` crate uses only Microsoft's official `windows` / `windows-core` crates.)

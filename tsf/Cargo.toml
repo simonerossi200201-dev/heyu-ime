@@ -1,0 +1,35 @@
+[package]
+name = "heyu-tsf"
+version = "1.0.0"
+edition = "2021"
+authors = ["Personal Clean-Room Edition"]
+description = "HEYU (鹤羽输入法) - thin TSF text-service client DLL (talks to heyu-ime.exe over a local named pipe)"
+build = "build.rs"
+
+[lib]
+name = "heyu_tsf"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Shared protocol + pipe client only (the DLL never loads dictionaries).
+heyu-ime = { path = ".." }
+# Microsoft's official Windows bindings (COM / TSF). No network capability.
+windows-core = "0.62"
+
+[dependencies.windows]
+version = "0.62"
+features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Com",
+    "Win32_System_Ole",
+    "Win32_System_Variant",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Registry",
+    "Win32_System_SystemServices",
+    "Win32_UI_HiDpi",
+    "Win32_UI_TextServices",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_WindowsAndMessaging",
+]
