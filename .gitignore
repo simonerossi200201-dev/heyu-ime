@@ -1,0 +1,48 @@
+target/
+tools/raw_sources/
+__pycache__/
+studio.log
+data/telemetry.json
+data/crash.log
+*.exe
+
+# --- Restricted / personal data: NEVER commit (see docs/LICENSING.md) -------------------------
+# Derived from 小鹤音形 / openfly tables (小鹤音形 EULA / NC terms) - kept only on the owner's
+# machine (data/ legacy location or %APPDATA%\HEYU\data\private\).
+data/heyu_sys.tsv
+data/heyu_reverse.tsv
+data/shuangpin_shape_hints.tsv
+data/flypy_sys.tsv
+data/flypy_reverse.tsv
+data/root_atlas.json
+data/private/
+# 小鹤-derived root table / manual generated from the restricted table
+tools/heyu_facts.py
+tools/gen_manual.py
+tools/audit_manual.py
+鹤羽音形_完全指南.md
+鹤羽输入法_小鹤音形完全指南.md
+# Large open-source inputs are re-downloaded by tools/build_open_table.py --download;
+# only their LICENSE files and SOURCES.md are committed.
+tools/open_sources/unihan/*.zip
+tools/open_sources/unihan/Unihan_*.txt
+tools/open_sources/jieba/dict.txt
+# Release output & downloaded voice runtime/models
+dist/
+voice-runtime/
+models/
+data/*.log
+data/input_history.*
+data/.vault_key
+data/tmp_*
+data/voice_stream.jsonl
+data/dual_cursor_sink.json
+data/config.json
+data/user_custom.tsv
+data/security_audit_report.json
+data/tsf_registered.marker
+data/voice_config.json
+data/voice_cmd.json
+data/voice_live_status.json
+data/pill_avatar.*
+*.heyu-vault

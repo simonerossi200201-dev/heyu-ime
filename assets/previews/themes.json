@@ -1,0 +1,11 @@
+[
+  {"index": 0, "name": "曜石流金 · Obsidian Gold", "slug": "obsidian_gold", "is_dark": true, "glass": false, "file": "theme_00_obsidian_gold.png", "accent": "#eeb24c", "bg": "#212229", "text": "#eeeef2"},
+  {"index": 1, "name": "翡翠极光 · Cyber Jade", "slug": "cyber_jade", "is_dark": true, "glass": false, "file": "theme_01_cyber_jade.png", "accent": "#34d399", "bg": "#162323", "text": "#eaf4f1"},
+  {"index": 2, "name": "深海星云 · Nebula Cyan", "slug": "nebula_cyan", "is_dark": true, "glass": false, "file": "theme_02_nebula_cyan.png", "accent": "#5ecafa", "bg": "#182034", "text": "#eef3fb"},
+  {"index": 3, "name": "和紙 · Washi", "slug": "washi", "is_dark": false, "glass": false, "file": "theme_03_washi.png", "accent": "#b84230", "bg": "#f9f4e8", "text": "#2c2620"},
+  {"index": 4, "name": "霜白 · macOS Frost", "slug": "macos_frost", "is_dark": false, "glass": true, "file": "theme_04_macos_frost.png", "accent": "#007aff", "bg": "#fafafc", "text": "#1d1d1f"},
+  {"index": 5, "name": "纸白 · Notion Paper", "slug": "notion_paper", "is_dark": false, "glass": false, "file": "theme_05_notion_paper.png", "accent": "#2383e2", "bg": "#ffffff", "text": "#37352f"},
+  {"index": 6, "name": "樱 · Sakura", "slug": "sakura", "is_dark": false, "glass": false, "file": "theme_06_sakura.png", "accent": "#d65680", "bg": "#fff9fb", "text": "#402832"},
+  {"index": 7, "name": "薄荷 · Mint", "slug": "mint", "is_dark": false, "glass": false, "file": "theme_07_mint.png", "accent": "#0e946a", "bg": "#f6fcf9", "text": "#162e26"},
+  {"index": 8, "name": "石墨 · Graphite", "slug": "graphite", "is_dark": true, "glass": true, "file": "theme_08_graphite.png", "accent": "#0a84ff", "bg": "#2e2e32", "text": "#f5f5f7"}
+]
