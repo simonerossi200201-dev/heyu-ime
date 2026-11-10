@@ -1,0 +1,7 @@
+# HEYU personal phrase table (个人词库) - example shipped with the public release.
+# Format: code<TAB>text<TAB>comment
+# - A unique 4-key code (or a comment containing "直出") commits immediately on the 4th key.
+# - Text may contain {date} {date_zh} {date_slash} {time} {datetime} {weekday} {year} {month} {day} and \n.
+# - Ctrl+1..9 while typing pins the current candidate to the top of this file.
+hy	鹤羽	示例
+qmri	—— {date_zh} ({weekday}) {time}	直出

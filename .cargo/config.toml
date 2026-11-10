@@ -1,0 +1,4 @@
+# Static link of libunwind.a on *-pc-windows-gnullvm so neither heyu-ime.exe
+# nor heyu_tsf.dll (x64 / x86) ever depends on an external libunwind.dll.
+[build]
+rustflags = ["-C", "target-feature=+crt-static"]

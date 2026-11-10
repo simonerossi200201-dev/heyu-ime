@@ -1,0 +1,22 @@
+# HEYU Polyglot Lexicon (EN)
+# Format: ascii_key<TAB>word<TAB>freq<TAB>gloss
+because	because	9900000	因为
+important	important	9600000	重要的
+information	information	9550000	信息
+understand	understand	9500000	理解
+development	development	9450000	开发 / 发展
+security	security	9400000	安全
+different	different	9400000	不同的
+performance	performance	9400000	性能 / 表现
+architecture	architecture	9350000	架构
+private	private	9300000	私人的 / 私有
+environment	environment	9300000	环境
+application	application	9280000	应用程序
+offline	offline	9250000	离线
+immediately	immediately	9250000	立即 / 马上
+beautiful	beautiful	9200000	美丽的
+international	international	9200000	国际的
+communication	communication	9180000	通信 / 沟通
+configuration	configuration	9150000	配置
+implementation	implementation	9120000	实现
+specification	specification	9100000	规范 / 规格
